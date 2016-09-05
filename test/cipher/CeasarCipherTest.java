@@ -16,32 +16,39 @@ import static org.junit.Assert.*;
  *
  * @author jshearin
  */
-public class CeasarCipherTest {
-    
-    public CeasarCipherTest() {
+public class CeasarCipherTest
+{
+
+    public CeasarCipherTest()
+    {
     }
-    
+
     @BeforeClass
-    public static void setUpClass() {
+    public static void setUpClass()
+    {
     }
-    
+
     @AfterClass
-    public static void tearDownClass() {
+    public static void tearDownClass()
+    {
     }
-    
+
     @Before
-    public void setUp() {
+    public void setUp()
+    {
     }
-    
+
     @After
-    public void tearDown() {
+    public void tearDown()
+    {
     }
 
     /**
      * Test of encodeString method, of class CeasarCipher.
      */
     @Test
-    public void testEncodeString() {
+    public void testEncodeString()
+    {
         System.out.println("encodeString");
         String input = "Now is the time. 4 July 1776.";
         int shift = 5;
@@ -49,5 +56,5 @@ public class CeasarCipherTest {
         String result = CeasarCipher.encodeString(input, shift);
         assertEquals(expResult, result);
     }
-    
+
 }
